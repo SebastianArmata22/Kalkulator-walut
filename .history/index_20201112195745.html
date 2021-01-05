@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kalkulator walut</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/1e3e93b5d4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+    <div class="container">
+        <nav>
+        <div class="menu-container">
+            <div class="logo">
+                <a href="#"><img src="./photos/logo.png"></a>
+            </div>
+            <i  class="fas fa-bars hamburger " onclick="showMenu()"></i>
+            <div class="menu" id="menu">
+                <ul>
+                    <li id="qw" class="list"><a href="#about-us">O nas</a></li>
+                    <li class="list"><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <ul>
+                <li id="qw" class="list"><a href="#about-us">O nas</a></li>
+                <li class="list"><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+        </nav>
+        <section>
+        <div class="main-content">
+            <div class="calculator-content">
+            <div class="text">
+                <h1>Kalkulator <span>walutowy.</span></h1>
+                <p>Sprawdź kurs przelicznikiem walut i zobacz, ile zyskasz.</p>
+            </div>
+            <div class="calculator ">
+                <label for="inputNumber" class="text-label">Wprowadź kwotę</label><br>
+                <input type="text" id="inputNumber">
+                    <div class="inp-div">
+                        <button id="euro" onclick="checkCurrency(this)">Euro</button>
+                        <button id="dolar" onclick="checkCurrency(this)">Dolar</button>
+                        <button id="frank" onclick="checkCurrency(this)">Frank</button>
+                    </div>
+                <label for="outputNumber" class="text-label"> Kwota</label><br>
+                <div id="outputNumber"></div>
+                <button id="check" onclick="getData()">Sprawdź</button>
+            </div>
+        </div>
+        <div class="about-us" id="about-us">
+            <div class="photo-euro">
+                <img src="./photos/euro-512.png">
+            </div>
+            <div class="abous-us-contact">
+                <h1>O  nas</h1>
+                <p>Ogólnie  znana  teza  głosi,  iż  użytkownika  może  rozpraszać  zrozumiała
+                    zawartość  strony, kiedy ten chce zobaczyć sam jej wygląd.
+                    Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych
+                     „kombinacji” zdań, słówi akapitów, w przeciwieństwie do zwykłego: „tekst,
+                        tekst,   tekst”,   sprawiającego,   że   wygląda   to   „zbyt   czytelnie”
+                           po   polsku</p>
+            </div>
+        </div>
+        </section>
+        <div class="contact" id="contact">
+            <div class="contact-form-container">
+            <form class="contact-form" action="https://formspree.io/f/xqkgbkbb" method="POST">
+                <label for="">Imię</label><br />
+                <input class="name" type="text" placeholder="Imie" name="name"><br />
+                <label for="">E-mail</label><br />
+                <input class="email" type="email" placeholder="E-mail" name="_replyto"><br />
+                <label for="">Treść wiadomości</label><br />
+                <textarea class="text-area" name="message" placeholder="Treść"></textarea>
+                <button class="">Wyślij</button>
+
+            </form>
+        </div>
+            <div class="contact-img">
+                <img src="./photos/email.png">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>© Sebastian Armata 2020</p>
+        </div>
+    </footer>
+    </div>
+        <script src="script.js" ></script>
+    </body>
+</html>

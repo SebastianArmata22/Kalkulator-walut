@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-container{
+    display: flex;
+}
+.logo img{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 85px;
+    padding: 20px;
+}
+.menu ul{
+    display: inline-flex;
+
+    justify-content: end;
+
+}

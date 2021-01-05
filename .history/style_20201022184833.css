@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+width: 100%;
+}
+.menu-container{
+    display: flex;
+}
+.logo img{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 85px;
+    padding: 20px;
+}
+.menu{
+    justify-content: flex-end;
+}
+.menu ul li{
+    display: inline-block;
+
+
+}
+calculator-content{
+    max-width: 800px;
+}

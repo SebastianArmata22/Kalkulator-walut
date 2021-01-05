@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+width: 100%;
+}
+.menu-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 80px;
+    padding: 20px;
+}
+.menu{
+
+    position: absolute;
+    right: 0;
+}
+.menu ul li{
+    display: inline-flex;
+    margin-right: 100px;
+}
+.calculator-content{
+    max-width: 800px;
+}

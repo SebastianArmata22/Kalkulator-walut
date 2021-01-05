@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.content{
+width: 100%;
+}
+.menu-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 80px;
+    padding: 20px;
+}
+.menu{
+
+    position: absolute;
+    right: 0;
+}
+.menu ul li{
+    display: inline-flex;
+    margin-right: 100px;
+}
+.menu ul li a{
+    display: flex;
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li a:hover{
+    border-bottom: 5px solid #2980b9;
+    border-left: 5px solid #2980b9;
+}
+.calculator-content{
+    max-width: 800px;
+}
